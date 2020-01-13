@@ -6,6 +6,12 @@
 
 class MyString
 {
+private:
+	char arr();
+	int capacity();
+	int curr_length();
+	
+
 public:
 
 	MyString();
@@ -27,7 +33,7 @@ MyString::MyString(string s)
 {
 	arr[i] = s.arr[i];
 	
-	return s;
+
 
 }
 MyString::MyString(MyString s)
