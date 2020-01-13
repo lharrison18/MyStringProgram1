@@ -2,3 +2,11 @@
 //Name: Lauren Harrison
 //Date: 1/ /20 
 //Discription Writing a program that will let you change an array behind the scenes
+
+using namespace std;
+
+Class MyString
+{
+
+
+};
