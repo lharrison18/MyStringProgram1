@@ -1,22 +1,36 @@
 #pragma once
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+
 class MyString
 {
 public:
-	myString str;
-	currentLength;
+
+	MyString();
+	MyString(string s);
+	MyString(MyString s);
 
 
 
-};
-MyString::myString str
+};// end of the class
+
+MyString::MyString()
 {
 	arr == nullptr;
-	curr.length = 0;
+	curr.len = 0;
 	capacity = 0;
 
+}
+MyString::MyString(string s)
+{
+	arr[i] = s.arr[i];
+	
+	return s;
 
 }
-MyString::currentLength
+MyString::MyString(MyString s)
 {
 
 

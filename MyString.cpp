@@ -5,33 +5,13 @@
 
 #include <iostream>
 #include <iomanip>
-#include <string.h>
+#include <string>
+
+#include "string.h" // class definition
 
 using namespace std;
 
-class MyString
-{
-public:
-	myString str;
-	currentLength;
 
-
-
-};
-MyString::myString str
-{
-	arr == nullptr;
-	curr.length = 0;
-	capacity = 0;
-
-
-}
- MyString::currentLength
-{
-
-
-
-}
 int main() {
 
 	int curr.length;
