@@ -7,16 +7,19 @@
 class MyString
 {
 private:
-	char arr();
-	int capacity();
-	int curr_length();
+	
+	void resizeIfFull();
+	
 	
 
 public:
 
 	MyString();
-	MyString(string s);
-	MyString(MyString s);
+	int get(index);
+	MyString(string size);
+	MyString(MyString size);
+	void addElement(array ele);
+	void addElement(int index, array ele)
 
 
 
@@ -27,18 +30,62 @@ MyString::MyString()
 	arr == nullptr;
 	curr.len = 0;
 	capacity = 0;
+	
+	
 
 }
-MyString::MyString(string s)
+int MyString::get(int index)
 {
-	arr[i] = s.arr[i];
+	return arr[index];
+}
+MyString::MyString(string size)
+{
+	int curr.len;
+	arr[i] = size.arr[i];
 	
 
 
 }
-MyString::MyString(MyString s)
+MyString::MyString(MyString size)
 {
+	arr[] larger = new element[curr.len + 1];
+	for (int i = 0; i < curr.len; i++)
+	{
+		larger[i] = element[i];
+		element = larger;
+	}
 
+	
 
+}
+void MyString::resizeIfFull()
+{
+	arr[] larger = new element[curr.len + 1];
+	
+	if (arr < curr.len) return;
+	arr[]larger = new element[2 * curr.len];
+	for (int i = 0; i < curr.len; i++)
+	{
+		larger[i] = element[i];
+		element = larger;
+	}
+}
+void MyString::addElement(array ele)
+{
+	resizeIfFull();
+	element[capacity] = ele;
+	capacity++;
 
+}
+void MyString::addElement(int index, array ele)
+{
+	resizeIfFull();
+	for (int lose = capacity - 1; lose >= index; lose-- )
+	{
+		arr[lose + 1] = arr[lose];
+
+	}
+	arr[index] = arr;
+	capacity++;
+	delete[]element;
 }
